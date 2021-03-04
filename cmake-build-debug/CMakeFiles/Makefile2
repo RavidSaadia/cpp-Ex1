@@ -94,12 +94,12 @@ clean: CMakeFiles/snow_man_a.dir/clean
 CMakeFiles/snow_man_a.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target snow_man_a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target snow_man_a"
 .PHONY : CMakeFiles/snow_man_a.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/snow_man_a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/snow_man_a.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/snow_man_a.dir/rule

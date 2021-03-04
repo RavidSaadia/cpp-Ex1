@@ -4,12 +4,15 @@
 
 #ifndef SNOWMAN_A_SNOWMAN_H
 #define SNOWMAN_A_SNOWMAN_H
+namespace ariel{
+    char* snowman(int input);
 
+
+}
 
 class snowman {
 
 public:
-    char* snowman(int a);
 
     };
 

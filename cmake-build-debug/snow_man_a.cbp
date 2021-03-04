@@ -82,7 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ravid/CLionProjects/snow_man_a/main.cpp">
+		<Unit filename="/home/ravid/CLionProjects/snow_man_a/Test.cpp">
+			<Option target="snow_man_a"/>
+		</Unit>
+		<Unit filename="/home/ravid/CLionProjects/snow_man_a/TestCounter.cpp">
+			<Option target="snow_man_a"/>
+		</Unit>
+		<Unit filename="/home/ravid/CLionProjects/snow_man_a/doctest.h">
+			<Option target="snow_man_a"/>
+		</Unit>
+		<Unit filename="/home/ravid/CLionProjects/snow_man_a/snowman.cpp">
+			<Option target="snow_man_a"/>
+		</Unit>
+		<Unit filename="/home/ravid/CLionProjects/snow_man_a/snowman.hpp">
 			<Option target="snow_man_a"/>
 		</Unit>
 		<Unit filename="/home/ravid/CLionProjects/snow_man_a/CMakeLists.txt">

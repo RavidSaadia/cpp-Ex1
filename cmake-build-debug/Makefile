@@ -143,32 +143,86 @@ snow_man_a/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/build
 .PHONY : snow_man_a/fast
 
-main.o: main.cpp.o
+Test.o: Test.cpp.o
 
-.PHONY : main.o
+.PHONY : Test.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/main.cpp.o
-.PHONY : main.cpp.o
+Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/Test.cpp.o
+.PHONY : Test.cpp.o
 
-main.i: main.cpp.i
+Test.i: Test.cpp.i
 
-.PHONY : main.i
+.PHONY : Test.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/main.cpp.i
-.PHONY : main.cpp.i
+Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/Test.cpp.i
+.PHONY : Test.cpp.i
 
-main.s: main.cpp.s
+Test.s: Test.cpp.s
 
-.PHONY : main.s
+.PHONY : Test.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/main.cpp.s
-.PHONY : main.cpp.s
+Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/Test.cpp.s
+.PHONY : Test.cpp.s
+
+TestCounter.o: TestCounter.cpp.o
+
+.PHONY : TestCounter.o
+
+# target to build an object file
+TestCounter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/TestCounter.cpp.o
+.PHONY : TestCounter.cpp.o
+
+TestCounter.i: TestCounter.cpp.i
+
+.PHONY : TestCounter.i
+
+# target to preprocess a source file
+TestCounter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/TestCounter.cpp.i
+.PHONY : TestCounter.cpp.i
+
+TestCounter.s: TestCounter.cpp.s
+
+.PHONY : TestCounter.s
+
+# target to generate assembly for a file
+TestCounter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/TestCounter.cpp.s
+.PHONY : TestCounter.cpp.s
+
+snowman.o: snowman.cpp.o
+
+.PHONY : snowman.o
+
+# target to build an object file
+snowman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/snowman.cpp.o
+.PHONY : snowman.cpp.o
+
+snowman.i: snowman.cpp.i
+
+.PHONY : snowman.i
+
+# target to preprocess a source file
+snowman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/snowman.cpp.i
+.PHONY : snowman.cpp.i
+
+snowman.s: snowman.cpp.s
+
+.PHONY : snowman.s
+
+# target to generate assembly for a file
+snowman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snow_man_a.dir/build.make CMakeFiles/snow_man_a.dir/snowman.cpp.s
+.PHONY : snowman.cpp.s
 
 # Help Target
 help:
@@ -179,9 +233,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... snow_man_a"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Test.o"
+	@echo "... Test.i"
+	@echo "... Test.s"
+	@echo "... TestCounter.o"
+	@echo "... TestCounter.i"
+	@echo "... TestCounter.s"
+	@echo "... snowman.o"
+	@echo "... snowman.i"
+	@echo "... snowman.s"
 .PHONY : help
 
 

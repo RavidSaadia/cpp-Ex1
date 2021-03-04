@@ -3,4 +3,5 @@ project(snow_man_a)
 
 set(CMAKE_CXX_STANDARD 98)
 
-add_executable(snow_man_a main.cpp)
+add_executable(snow_man_a  snowman.cpp snowman.hpp
+        doctest.h Test.cpp TestCounter.cpp )

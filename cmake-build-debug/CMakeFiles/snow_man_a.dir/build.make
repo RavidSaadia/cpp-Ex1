@@ -77,30 +77,60 @@ include CMakeFiles/snow_man_a.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/snow_man_a.dir/flags.make
 
-CMakeFiles/snow_man_a.dir/main.cpp.o: CMakeFiles/snow_man_a.dir/flags.make
-CMakeFiles/snow_man_a.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snow_man_a.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/snow_man_a.dir/main.cpp.o -c /home/ravid/CLionProjects/snow_man_a/main.cpp
+CMakeFiles/snow_man_a.dir/snowman.cpp.o: CMakeFiles/snow_man_a.dir/flags.make
+CMakeFiles/snow_man_a.dir/snowman.cpp.o: ../snowman.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snow_man_a.dir/snowman.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/snow_man_a.dir/snowman.cpp.o -c /home/ravid/CLionProjects/snow_man_a/snowman.cpp
 
-CMakeFiles/snow_man_a.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow_man_a.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ravid/CLionProjects/snow_man_a/main.cpp > CMakeFiles/snow_man_a.dir/main.cpp.i
+CMakeFiles/snow_man_a.dir/snowman.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow_man_a.dir/snowman.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ravid/CLionProjects/snow_man_a/snowman.cpp > CMakeFiles/snow_man_a.dir/snowman.cpp.i
 
-CMakeFiles/snow_man_a.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow_man_a.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ravid/CLionProjects/snow_man_a/main.cpp -o CMakeFiles/snow_man_a.dir/main.cpp.s
+CMakeFiles/snow_man_a.dir/snowman.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow_man_a.dir/snowman.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ravid/CLionProjects/snow_man_a/snowman.cpp -o CMakeFiles/snow_man_a.dir/snowman.cpp.s
+
+CMakeFiles/snow_man_a.dir/Test.cpp.o: CMakeFiles/snow_man_a.dir/flags.make
+CMakeFiles/snow_man_a.dir/Test.cpp.o: ../Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/snow_man_a.dir/Test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/snow_man_a.dir/Test.cpp.o -c /home/ravid/CLionProjects/snow_man_a/Test.cpp
+
+CMakeFiles/snow_man_a.dir/Test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow_man_a.dir/Test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ravid/CLionProjects/snow_man_a/Test.cpp > CMakeFiles/snow_man_a.dir/Test.cpp.i
+
+CMakeFiles/snow_man_a.dir/Test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow_man_a.dir/Test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ravid/CLionProjects/snow_man_a/Test.cpp -o CMakeFiles/snow_man_a.dir/Test.cpp.s
+
+CMakeFiles/snow_man_a.dir/TestCounter.cpp.o: CMakeFiles/snow_man_a.dir/flags.make
+CMakeFiles/snow_man_a.dir/TestCounter.cpp.o: ../TestCounter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/snow_man_a.dir/TestCounter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/snow_man_a.dir/TestCounter.cpp.o -c /home/ravid/CLionProjects/snow_man_a/TestCounter.cpp
+
+CMakeFiles/snow_man_a.dir/TestCounter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snow_man_a.dir/TestCounter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ravid/CLionProjects/snow_man_a/TestCounter.cpp > CMakeFiles/snow_man_a.dir/TestCounter.cpp.i
+
+CMakeFiles/snow_man_a.dir/TestCounter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snow_man_a.dir/TestCounter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ravid/CLionProjects/snow_man_a/TestCounter.cpp -o CMakeFiles/snow_man_a.dir/TestCounter.cpp.s
 
 # Object files for target snow_man_a
 snow_man_a_OBJECTS = \
-"CMakeFiles/snow_man_a.dir/main.cpp.o"
+"CMakeFiles/snow_man_a.dir/snowman.cpp.o" \
+"CMakeFiles/snow_man_a.dir/Test.cpp.o" \
+"CMakeFiles/snow_man_a.dir/TestCounter.cpp.o"
 
 # External object files for target snow_man_a
 snow_man_a_EXTERNAL_OBJECTS =
 
-snow_man_a: CMakeFiles/snow_man_a.dir/main.cpp.o
+snow_man_a: CMakeFiles/snow_man_a.dir/snowman.cpp.o
+snow_man_a: CMakeFiles/snow_man_a.dir/Test.cpp.o
+snow_man_a: CMakeFiles/snow_man_a.dir/TestCounter.cpp.o
 snow_man_a: CMakeFiles/snow_man_a.dir/build.make
 snow_man_a: CMakeFiles/snow_man_a.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable snow_man_a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable snow_man_a"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/snow_man_a.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

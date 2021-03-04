@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ravid/CLionProjects/snow_man_a/main.cpp" "/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles/snow_man_a.dir/main.cpp.o"
+  "/home/ravid/CLionProjects/snow_man_a/Test.cpp" "/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles/snow_man_a.dir/Test.cpp.o"
+  "/home/ravid/CLionProjects/snow_man_a/TestCounter.cpp" "/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles/snow_man_a.dir/TestCounter.cpp.o"
+  "/home/ravid/CLionProjects/snow_man_a/snowman.cpp" "/home/ravid/CLionProjects/snow_man_a/cmake-build-debug/CMakeFiles/snow_man_a.dir/snowman.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

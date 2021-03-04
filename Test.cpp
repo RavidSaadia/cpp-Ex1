@@ -16,10 +16,19 @@ using namespace ariel;
 #include <string>
 using namespace std;
 
-dgs
+
 TEST_CASE("Good snowman code") {
-            CHECK(snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
-            CHECK(snowman(33232124) == string("_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(11114411) == string("_===_\n(.,.)\n( : )\n( : )"));
+            CHECK(ariel::snowman(33232124) == string("_\n(.,.)\n( : )\n( : )"));
     /* Add more checks here */
 
 
@@ -30,7 +39,18 @@ TEST_CASE("Good snowman code") {
 }
 
 TEST_CASE("Bad snowman code") {
-    CHECK_THROWS(snowman(555));
+
+//    CHECK_THROWS(ariel::snowman(555));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(111111111));
+    CHECK_THROWS(ariel::snowman(555));
     /* Add more checks here */
 }
 

@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/snow_man_a.dir/main.cpp.o"
+  "CMakeFiles/snow_man_a.dir/Test.cpp.o"
+  "CMakeFiles/snow_man_a.dir/TestCounter.cpp.o"
+  "CMakeFiles/snow_man_a.dir/snowman.cpp.o"
   "snow_man_a"
   "snow_man_a.pdb"
 )

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/snow_man_a.dir/main.cpp.o  -o snow_man_a 
+/usr/bin/c++  -g   CMakeFiles/snow_man_a.dir/snowman.cpp.o CMakeFiles/snow_man_a.dir/Test.cpp.o CMakeFiles/snow_man_a.dir/TestCounter.cpp.o  -o snow_man_a 
