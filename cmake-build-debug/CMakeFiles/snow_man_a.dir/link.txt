@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/snow_man_a.dir/main.cpp.o  -o snow_man_a 
