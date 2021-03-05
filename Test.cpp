@@ -11,9 +11,9 @@
 
 #include "doctest.h"
 #include "snowman.hpp"
-using namespace ariel;
-
 #include <string>
+
+using namespace ariel;
 using namespace std;
 
 

@@ -2,26 +2,43 @@
 // Created by ravid on 04/03/2021.
 //
 #include "snowman.hpp"
+#include <string>
+#include <iostream>
+
 namespace ariel {
     using namespace std;
-    char* snowman(int input) {
+    string  snowman(int input) {
+        const int next_digit = 10;
+        const int legal_digit_num = 8;
 
         int check = input;
-        if (check < 0){throw "negative number!!!";} // check if the input is neg
-        for (int i = 0; i < 8; ++i) { // simple check if the input is correct
-            if (check % 10 > 4 || check % 10 == 0){
-                throw "digits are not 1-4 !!!";
-            } else{
-                check = check / 10;
-            }
+
+        if (check < 0) { // check if the input is neg
+            cout<<"negative number!!!\n";
+            throw std::exception();
+
         }
-        if (check != 0){throw "more than 8 digits!!!" ;} // check if the input is more then 8 digits
-        char *ans;
+        for (int i = 0; i < legal_digit_num; ++i) { // simple check if the input is correct
 
 
+              if (check % next_digit > 4 || check % next_digit == 0) {
+              cout<< "digits are not 1-4 !!!\n";
+                  throw std::exception();
+              }
 
 
-        return ans;
+                check = (int) (check / next_digit);
+
+        }
+        if (check != 0) { // check if the input is more then 8 digits
+       cout<<"more than 8 digits!!!\n";
+            throw std::exception();
+
+        }
+
+
+        string s = "";
+        return s;
     }
 
 }
