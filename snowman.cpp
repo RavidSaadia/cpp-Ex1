@@ -33,7 +33,7 @@ namespace ariel {
 
         }
 // build a snow man!!!
-        int parts[8] = {0};
+        int parts[legal_digit_num] = {0};
         check = input;
         for (int i = legal_digit_num - 1; i >= 0; --i) { // fill the parts array with the input
             parts[i] = check % next_digit;
@@ -69,7 +69,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
-                break;
         }
         switch (parts[2]) {// left eye
             case 1:
@@ -83,7 +82,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "(-";
-                break;
         }
         switch (parts[1]) {// nose
             case 1:
@@ -97,7 +95,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
-                break;
         }
         switch (parts[3]) {// right eye
             case 1:
@@ -111,7 +108,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "-)";
-                break;
         }
         switch (parts[5]) { // right hand if up
             case 1:
@@ -125,7 +121,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " \n";
-                break;
         }
         switch (parts[4]) { // left hand if down
             case 1:
@@ -139,9 +134,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
-                break;
         }
-        switch (parts[6]) { // shirt
+        switch (parts[6]) { // torso
             case 1:
                 ans = ans + "( : )";
                 break;
@@ -153,7 +147,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "(   )";
-                break;
         }
         switch (parts[5]) { // right hand if down
             case 1:
@@ -167,7 +160,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " \n";
-                break;
         }
         switch (parts[7]) { // basic
             case 1:
@@ -181,7 +173,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans +" (   ) " ;
-                break;
         }
 
 //        cout<<ans;
