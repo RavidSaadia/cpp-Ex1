@@ -4,10 +4,9 @@
 #include <string>
 #ifndef SNOWMAN_A_SNOWMAN_H
 #define SNOWMAN_A_SNOWMAN_H
-using namespace std;
 
 namespace ariel{
-    string snowman(int input);
+    std::string snowman(int input);
 }
 
 class snowman {
