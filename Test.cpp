@@ -78,14 +78,6 @@ TEST_CASE ("Bad snowman code") {
             CHECK_THROWS(ariel::snowman(98765098));// ==>"digits are not 1-4 !!!"
             CHECK_THROWS(ariel::snowman(987650987));// ==>"digits are not 1-4 !!!"
 
-
-//            CHECK_THROWS(ariel::snowman(0));
-//            CHECK_THROWS(ariel::snowman(00000000));
-//            CHECK_THROWS(ariel::snowman(555));
-//            CHECK_THROWS(ariel::snowman(2223));
-//            CHECK_THROWS(ariel::snowman(55234));
-    /* Add more checks here */
 }
 
 
-/* Add more test cases here */

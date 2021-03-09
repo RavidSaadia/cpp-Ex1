@@ -16,24 +16,29 @@ namespace ariel {
         const int LEGAL_DIGIT_NUM = 8;
         int check = input;
 
-        if (check < 0) { // check if the input is neg
+        // check if the input is neg
+        if (check < 0) {
             cout << "negative number!!!\n";
             throw std::exception();
         }
 
+        // check if the input is to short
         if (check < the_lowest_input){
             cout << "less then 8 digits!!!\n";
             throw std::exception();
         }
 
-        for (int i = 0; i < LEGAL_DIGIT_NUM; ++i) { // simple check if the input is correct
+        // check if the input is correct (every digit between 1 to 4)
+        for (int i = 0; i < LEGAL_DIGIT_NUM; ++i) {
             if (check % NEXT_DIGIT > 4 || check % NEXT_DIGIT == 0) {
                 cout << "digits are not 1-4 !!!\n";
                 throw std::exception();
             }
             check = (int) (check / NEXT_DIGIT);
         }
-        if (check != 0) { // check if the input is more then 8 digits
+
+        // check if the input is more then 8 digits
+        if (check != 0) {
             cout << "more than 8 digits!!!\n";
             throw std::exception();
 
