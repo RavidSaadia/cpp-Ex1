@@ -3,7 +3,6 @@
 //
 #include "snowman.hpp"
 #include <string>
-#include <array>
 #include <iostream>
 
 namespace ariel {
@@ -11,11 +10,10 @@ namespace ariel {
 
     string snowman(int input) {
 // first: input checks
-        const int THE_LOWEST_INPUT = 11111111;
-        const int NEXT_DIGIT = 10;
-        const int LEGAL_DIGIT_NUM = 8;
-        int check = input;
-
+        const int THE_LOWEST_INPUT = 11111111; // the lowest legal input
+        const int NEXT_DIGIT = 10; // by doing --> input / NEXT_DIGIT
+        const int LEGAL_INPUT_LENGTH = 8;
+        int check = input; // with check we will test if the input is correct
         // check if the input is neg
         if (check < 0) {
             cout << "negative number!!!\n";
@@ -29,9 +27,9 @@ namespace ariel {
         }
 
         // check if the input is correct (every digit between 1 to 4)
-        for (int i = 0; i < LEGAL_DIGIT_NUM; ++i) {
+        for (int i = 0; i < LEGAL_INPUT_LENGTH; ++i) {
             if (check % NEXT_DIGIT > 4 || check % NEXT_DIGIT == 0) {
-                cout << "digits are not 1-4 !!!\n";
+                cout << "digits are not between 1-4 !!!\n";
                 throw std::exception();
             }
             check = (int) (check / NEXT_DIGIT);
@@ -46,9 +44,9 @@ namespace ariel {
 
         //now we build the snow man line by line from top to bottom
         //we do it by checking the "parts" array
-        //parts[8] = { Hat, Nose, Left hand, Right hand, X-left eye, Y-right eye, Torso, Basic}
-        int parts[LEGAL_DIGIT_NUM] = {0};
-        for (int i = LEGAL_DIGIT_NUM - 1; i >= 0; --i) { // fill the parts array with the input
+        //parts[8] = { [0]=Hat, [1]=Nose, [2]=Left hand, [3]=Right hand, [4]=X-left eye, [5]=Y-right eye, [6]=Torso, [7]=Basic}
+        int parts[LEGAL_INPUT_LENGTH] = {0};
+        for (int i = LEGAL_INPUT_LENGTH - 1; i >= 0; --i) { // fill the parts array with the input
             parts[i] = input % NEXT_DIGIT;
             input = input / NEXT_DIGIT;
         }
@@ -68,7 +66,6 @@ namespace ariel {
                 break;
             case 4:
                 ans = "  ___  \n (_*_) \n";
-                break;
             default:;
         }
 
@@ -85,6 +82,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
+            default:;
+
         }
 
         // left eye
@@ -100,6 +99,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "(-";
+            default:;
+
         }
 
         // nose
@@ -115,6 +116,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
+            default:;
+
         }
 
         // right eye
@@ -130,6 +133,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "-)";
+            default:;
+
         }
 
         // right hand if up
@@ -145,6 +150,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " \n";
+            default:;
+
         }
 
         // left hand if down
@@ -160,6 +167,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
+            default:;
+
         }
 
         // torso
@@ -175,6 +184,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "(   )";
+            default:;
+
         }
 
         // right hand if down
@@ -190,6 +201,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " \n";
+            default:;
+
         }
 
         // basic
@@ -205,6 +218,8 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " (   ) ";
+            default:;
+
         }
 
 
