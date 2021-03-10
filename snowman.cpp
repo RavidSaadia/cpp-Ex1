@@ -11,7 +11,7 @@ namespace ariel {
 
     string snowman(int input) {
 // first: input checks
-        int the_lowest_input = 11111111;
+        const int THE_LOWEST_INPUT = 11111111;
         const int NEXT_DIGIT = 10;
         const int LEGAL_DIGIT_NUM = 8;
         int check = input;
@@ -23,7 +23,7 @@ namespace ariel {
         }
 
         // check if the input is to short
-        if (check < the_lowest_input){
+        if (check < THE_LOWEST_INPUT){
             cout << "less then 8 digits!!!\n";
             throw std::exception();
         }
