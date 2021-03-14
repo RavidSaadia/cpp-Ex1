@@ -10,44 +10,53 @@ namespace ariel {
 
     string snowman(int input) {
 // first: input checks
+
         const int THE_LOWEST_INPUT = 11111111; // the lowest legal input
+        // const numbers for the magic numbers
+        const int right_hand = 5;
+        const int torso = 6;
+        const int basic = 7;
         const int NEXT_DIGIT = 10; // by doing --> input / NEXT_DIGIT
         const int LEGAL_INPUT_LENGTH = 8;
         int check = input; // with check we will test if the input is correct
         // check if the input is neg
         if (check < 0) {
-            cout << "negative number!!!\n";
-            throw std::exception();
+//            cout << "negative number!!!"<<endl;
+            throw std::out_of_range("negative number!!!");
+//            throw std::exception();
         }
 
         // check if the input is to short
         if (check < THE_LOWEST_INPUT){
-            cout << "less then 8 digits!!!\n";
-            throw std::exception();
+//            cout << "less then 8 digits!!!"<<endl;
+            throw std::out_of_range("less then 8 digits!!!");
+//            throw std::exception();
         }
 
         // check if the input is correct (every digit between 1 to 4)
         for (int i = 0; i < LEGAL_INPUT_LENGTH; ++i) {
             if (check % NEXT_DIGIT > 4 || check % NEXT_DIGIT == 0) {
-                cout << "digits are not between 1-4 !!!\n";
-                throw std::exception();
+//                cout << "digits are not between 1-4 !!!"<<endl;
+                throw std::out_of_range("digits are not between 1-4 !!!");
             }
             check = (int) (check / NEXT_DIGIT);
         }
 
         // check if the input is more then 8 digits
         if (check != 0) {
-            cout << "more than 8 digits!!!\n";
-            throw std::exception();
-
+//            cout << "more than 8 digits!!!"<<endl;
+            throw std::out_of_range("more than 8 digits!!!");
         }
 
         //now we build the snow man line by line from top to bottom
         //we do it by checking the "parts" array
         //parts[8] = { [0]=Hat, [1]=Nose, [2]=Left hand, [3]=Right hand, [4]=X-left eye, [5]=Y-right eye, [6]=Torso, [7]=Basic}
-        int parts[LEGAL_INPUT_LENGTH] = {0};
+
+//        int parts[LEGAL_INPUT_LENGTH] = {0};
+        std::array<int,LEGAL_INPUT_LENGTH> parts = {0};
+
         for (int i = LEGAL_INPUT_LENGTH - 1; i >= 0; --i) { // fill the parts array with the input
-            parts[i] = input % NEXT_DIGIT;
+            parts.at(i) = input % NEXT_DIGIT;
             input = input / NEXT_DIGIT;
         }
         string ans;
@@ -66,7 +75,7 @@ namespace ariel {
                 break;
             case 4:
                 ans = "  ___  \n (_*_) \n";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
         }
 
         // left hand if up
@@ -82,7 +91,7 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
@@ -99,7 +108,7 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "(-";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
@@ -116,7 +125,7 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
@@ -133,12 +142,12 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "-)";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
         // right hand if up
-        switch (parts[5]) {
+        switch (parts[right_hand]) {
             case 1:
                 ans = ans + " \n";
                 break;
@@ -150,7 +159,7 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " \n";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
@@ -167,12 +176,12 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " ";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
         // torso
-        switch (parts[6]) {
+        switch (parts[torso]) {
             case 1:
                 ans = ans + "( : )";
                 break;
@@ -184,12 +193,12 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + "(   )";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
         // right hand if down
-        switch (parts[5]) {
+        switch (parts[right_hand]) {
             case 1:
                 ans = ans + ">\n";
                 break;
@@ -201,12 +210,12 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " \n";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
         // basic
-        switch (parts[7]) {
+        switch (parts[basic]) {
             case 1:
                 ans = ans + " ( : ) ";
                 break;
@@ -218,7 +227,7 @@ namespace ariel {
                 break;
             case 4:
                 ans = ans + " (   ) ";
-            default:;
+            default: cout << "something wrong, chek the cases" <<endl;
 
         }
 
